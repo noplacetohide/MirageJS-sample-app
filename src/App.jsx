@@ -16,7 +16,8 @@ export default function App() {
       <ul>
         {users.map((user) => (
           <li key={user.id} className="p-4 my-2 rounded-sm bg-green-100 shadow shadow-green-600 text-lg font-semibold text-gray-600">
-            {user.firstName} {user.lastName} - {user.email}
+            <div >{user.firstName} {user.lastName} - {user.sex}</div>
+            <div className="text-sm text-gray-400">{user.bio}</div>
           </li>
         ))}
       </ul>
